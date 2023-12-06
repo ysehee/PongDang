@@ -1,0 +1,46 @@
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.headerBox{
+    /* width: 1280px; */
+    width: 100%;
+    height: 70px;
+    background-color: #FFEAF1;
+    overflow: hidden;
+    /* border: 1px solid; */
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99999;
+}
+.header{
+    width: 1280px;
+    margin: 0 auto;
+}
+.header > ul{
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 70px;
+}
+.h_left{
+    float: left;
+}
+.h_right{
+    float: right;
+}
+.header > ul > li{
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    color: #aba8a8;
+    
+    /* border: 1px solid; */
+    /* box-sizing: border-box; */
+}
+
+/* 메인 영역 */

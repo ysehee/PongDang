@@ -1,0 +1,126 @@
+.event{
+    width: 1280px;
+    height: 1000px;
+    background-color: #FFFCF4;
+    overflow: hidden;
+    margin: 0 auto;
+    /* border: 1px solid; */
+    
+    margin-top: 110px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}   
+
+.eventList,
+.myEvent{
+    /* border: 1px solid; */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.eventList{
+    width: 70%;
+}
+.myEvent{
+    width: 30%;
+}
+.eventList_navTxt,
+.myEvent_navTxt{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFEAF1;
+    box-shadow: 1px 3px 7px #a9a9a9;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.myEvent_navTxt{
+    display: flex;
+    justify-content: space-around;
+}
+.myEvent_navTxt div{
+    width: 50%;
+}
+.myEvent_navTxt div:nth-child(1){
+    border-right: 1px solid;
+}
+.eventItem{
+    padding: 8px;
+    display: flex;
+}
+.eventItemImg{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid; */
+    overflow: hidden;
+    border-radius: 15px;
+}
+.eventItemImg img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.eventDescArea{
+    width: 70%;
+    /* border: 1px solid; */
+    float: right;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.myEventItem{
+    padding: 8px 0 8px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+.eventItem,
+.myEventItem{
+    width: 100%;
+    height: 130px;
+    background-color: #FFEAF1;
+    box-shadow: 1px 3px 7px #a9a9a9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.eventTitle,
+.eventContent{
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+    padding-left: 15px;
+}
+.eventTitle{
+    height: 30%;
+}
+.eventContent{
+    height: 70%;
+}
+.eventTitle input,
+.eventContent input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    background: none;
+    border: none;
+    outline: none;
+}
+.eventTitle input{
+    font-weight: 800;
+}
+
+

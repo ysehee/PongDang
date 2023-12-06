@@ -1,0 +1,261 @@
+.qna{
+    width: 1280px;
+    height: 1000px;
+    background-color: #FFFCF4;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+    
+    margin-top: 110px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.qnaLeft{
+    width: 80%;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.qnaRight{
+    width: 20%;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    padding: 8px;
+}
+.qnaNav{
+    width: 100%;
+    height: 70px;
+    background-color: #FFEAF1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    display: flex;
+    gap: 20px;
+}
+.nthQ,
+.qTitle{
+    height: 100%;
+    background-color: #DEEDFB;
+    box-shadow: 1px 3px 7px #a9a9a9;
+    border-radius: 10px;
+}
+.nthQ input,
+.qTitle input{
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+
+    background: none;
+    outline: none;
+    border: none;
+}
+.nthQ{
+    width: 130px;
+}
+.qTitle{
+    width: 900px;
+}
+.qnaInner{
+    width: 100%;
+    height: calc(100% - 70px - 20px);
+
+    display: flex;
+    gap: 20px;
+}
+.qnaArea,
+.qnaChatArea{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    background-color: #FFEAF1;
+}
+
+.qnaArea{
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.qnaForm{
+    width: 100%;
+    height: 400px;
+    /* background-color: plum; */
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.qnaForm div input{
+    background: none;
+    border: none;
+    outline: none;
+}
+.userName,
+.userAnswer{
+    width: 100%;
+    /* border: 1px solid; */
+    background-color: #DEEDFB;
+    border-radius: 10px;
+    box-shadow: 1px 3px 7px #a9a9a9;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.userName input{
+    transform: translateY(50%);
+}
+.userName{
+    height: 10%;
+    margin-bottom: 15px;
+}
+.userAnswer{
+    height: 80%;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.qnaBtn{
+    height: 8%;
+    float: right;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    transform: translateY(15%);
+    text-align: center;
+    box-shadow: 1px 3px 7px #a9a9a9;
+    background-color: #DEEDFB;
+}
+.qnaBtn input{
+    padding: 0 20px;
+    line-height: 32px;
+    box-sizing: border-box;
+    
+}
+
+
+/* 채팅방 영역 */
+.qnaChatRoom{
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    /* background-color: red; */
+
+    position: relative;
+}
+
+.blurBar{
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.msgArea{
+    position: absolute;
+    top: 18px;
+}
+
+.msgBox{
+    width: auto;
+    height: 50px;
+    background-color: #DEEDFB;
+    margin-bottom: 10px;
+    box-shadow: 1px 3px 7px #a9a9a9;
+    border-radius: 10px;
+}
+.msgBox input{
+    width: auto;
+    height: 100%;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 5px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.megWriteArea{
+    width: 95%;
+
+    position: absolute;
+    bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.msgWrite,
+.msgSubmit{
+    height: 45px;
+    background-color: #DEEDFB;
+    box-shadow: 1px 3px 7px #a9a9a9;
+    border-radius: 10px;
+}
+.msgWrite input,
+.msgSubmit input{
+    width: 100%;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+    background: none;
+}
+.msgWrite input{
+    padding-left: 15px;
+}
+.msgWrite{
+    width: 70%;
+}
+.msgSubmit{
+    width: 30%;
+}
+
+
+/* 받은 질문 목록 */
+.receiveQList{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #FFEAF1;
+    border-radius: 5px;
+    /* border: 5px solid; */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.receiveQList p{
+    line-height: 32px;
+}
+
+.receiveQItem{
+    width: 100%;
+    height: 35px;
+    background-color: #DEEDFB;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    display: flex;
+    gap: 5px;
+}
+.receiveQNo{
+    width: 12%;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.receiveQTitle{
+    width: 88%;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}

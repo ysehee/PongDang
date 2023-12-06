@@ -1,0 +1,47 @@
+#wrap{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: bisque;
+}
+.header{
+    width: 1280px;
+    height: 70px;
+    /* background-color: aliceblue; */
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.header > ul{
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 70px;
+}
+.h_left{
+    float: left;
+}
+.h_right{
+    float: right;
+}
+.header > ul > li{
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    color: #fff;
+    
+    /* border: 1px solid; */
+    /* box-sizing: border-box; */
+}
+
+/* 메인 영역 */
+.fullpage{
+    width: 100%;
+    height: 100%;
+    background: url(../img/index_1280.jpg) no-repeat bottom / cover ;
+}

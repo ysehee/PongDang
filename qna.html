@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <!-- <link rel="stylesheet" href="css/eventList.css"> -->
+    <!-- <link rel="stylesheet" href="css/eventDetail.css"> -->
+    <link rel="stylesheet" href="css/qna.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+
+</head>
+<body>
+    <div id="wrap">
+
+        <!-- 헤더 -->
+        <header class="headerBox">
+            <nav class="header">
+                <ul class="h_left">
+                    <li><a href="#">logo</a></li>
+                    <li><a href="#">Today's Q n A</a></li>
+                    <li><a href="#">Event</a></li>
+                </ul>
+                <ul class="h_right">
+                    <li><a href="#">Logout</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 오늘의 질문 메인영역 -->
+        <main class="qna">
+            
+            <div class="qnaLeft">
+
+                <div class="qnaNav">
+                    <div class="nthQ"><input type="text" name="nthQ" value="1번째 질문"></div>
+                    <div class="qTitle"><input type="text" name="qTtitle" value="1번째 질문 타이틀"></div>
+                </div>
+
+                <div class="qnaInner">
+                    <!-- 질문 답변 영역 -->
+                    <div class="qnaArea">
+                        
+                        <form action="#" method="post" id="qnaForm" class="qnaForm">
+                            <input type="hidden" name="none" value="none" id="none">
+                            <div class="userName mineName"><input type="text" name="mineName" value="상대방 닉네임"></div>
+                            <div class="userAnswer mineAnswer"><input type="text" name="mineAnswer" value="상대방 답변 영역입니다"></div>
+                            <div class="qnaBtn"><input type="button"  value="등록"></div>
+                        </form>
+
+                        <form action="#" method="post" id="qnaForm" class="qnaForm">
+                            <input type="hidden" name="none" value="none" id="none">
+                            <div class="userName myName"><input type="text" name="myName" value="내 닉네임"></div>
+                            <div class="userAnswer myAnswer"><input type="text" name="myAnswer" value="내 답변 영역입니다"></div>
+                            <div class="qnaBtn"><input type="button" value="등록"></div>
+                        </form>
+
+                    </div>
+
+                    <!-- 채팅방 영역 -->
+                    <div class="qnaChatArea">
+                        <!-- 오늘의 질문에 채팅방 영역입니다 -->
+                        
+                        <div class="qnaChatRoom">
+                            <div class="blurBar"></div>
+                                
+                            <div class="msgArea">
+                                <div class="msgBox"><input type="text" name="leftMessage" value="상대 메세지"></div>
+                                <div class="msgBox"><input type="text" name="rightMessage" value="내 메세지"></div>
+                            </div>
+                            <form action="#" method="post" name="megWriteArea" class="megWriteArea">
+                                <div class="msgWrite"><input type="text" name="msgWrite" value="메세지 입력" class="msgWrite" placeholder="메세지를 입력하세요"></div>
+                                <div class="msgSubmit"><input type="button" name="msgSubmit" value="보내기" class="msgSubmit"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="qnaRight">
+
+                <div class="receiveQList"><p>받은 질문 목록</p></div>
+
+                <div class="receiveQItem">
+                    <div class="receiveQNo"></div>
+                    <div class="receiveQTitle"></div>
+                </div>
+                
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
