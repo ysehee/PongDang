@@ -42,5 +42,8 @@
     /* border: 1px solid; */
     /* box-sizing: border-box; */
 }
+.header > ul > #logo{
+    background: url(../img/logo.png) center no-repeat / cover;
+}
 
 /* 메인 영역 */

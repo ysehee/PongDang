@@ -35,13 +35,84 @@
         </header>
 
         <!-- 회원가입 메인영역 -->
+
         <main class="join">
-            
-            <form action="#" method="post" name="joinForm" id="joinForm">
-                
-
-            </form>
-
+            <div class="wrapper">
+                <form accept="#" method="GET" name="joinForm" id="joinForm">
+    
+                    <div class="title"><h1>회원가입</h1></div>
+    
+                    <!-- 이름 or 닉네임 -->
+    
+                    <div class="Id">
+                        <label for="id">아이디</label>
+                        <input class="Check" id="id" name="userId"  type="text" placeholder="영문자로 시작하는 4~15글자 영문자-숫자 입력해야 합니다." maxlength="20" onblur="joinform_check()" >
+                        <button type="button" id="checkDuplicateBtn" onclick="checkUseId()">중복 검사</button>
+    
+                        <div id="idError" class="error"></div>
+                    </div>
+                    <div class="password">
+                        <label for="pw">비밀번호</label>
+                        <input class="Check" id="pw" name="userPw" type="password" placeholder="영문자+숫자+특수문자 조합으로 8~25자리 입력해야 합니다." maxlength="20" onblur="joinform_check()">
+                        <div id="pwError" class="error"></div>
+                    </div>
+                    <div class="passwordCheck">
+                        <label for="pwCheck">비밀번호 확인</label>
+                        <input class="Check" id="pwCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요." onblur="joinform_check()">
+                        <div id="pwCheckError" class="error"></div>
+                    </div>
+    
+                    <div class="nameCheck">
+                        <label for="nameCheck">이름</label>
+                        <input class="Check" id="nameCheck" name="userName" type="text" placeholder="이름을 입력해주세요." onblur="joinform_check()">
+                        <div id="nameCheckError" class="error"></div>
+                    </div>
+    
+                    <div class="gender">
+                        <label for="gender_sel">성별</label>
+                        <select name="userGender" id="gender_sel" onchange="joinform_check()">
+                            <option value="" disabled selected>성별 선택</option>
+                            <option value="male">남</option>
+                            <option value="female">여</option>
+                        </select>
+                        <div id="genderError" class="error"></div>
+                    </div>
+                    <div class="birth">
+                        <label for="birth">생년월일</label>
+                        <input class="Check" id="birth" name="userBirth"  type="text" placeholder="생년월일을 입력해주세요. ex)19980222" maxlength="20" onblur="joinform_check()">
+                        <div id="birthError" class="error"></div>
+                    </div>
+    
+                    <div class="phoneNo">
+                        <label for="phoneNo">핸드폰 번호</label>
+                        <input class="Check" id="phoneNo" name="userPhoneNo"  type="text" placeholder="핸드폰번호 '-' 없이 입력해주세요." maxlength="20" onblur="joinform_check()">
+                        <div id="phoneNoError" class="error"></div>
+                    </div>
+    
+                    <div class="email">
+                        <label for="email_id">이메일</label>
+                        <input type="hidden" name="userEmail" id="userEmail">
+                        <input type="text"  id="email_id" class="Check" placeholder="example" onblur="joinform_check()"> @
+                        <input type="text"  onblur="joinform_check()"  id="email_add" class="Check"  placeholder="example.com">
+                        <select  id="email_sel" onblur="joinform_check()" onchange="change_email()" >
+                            <option value="">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="daum.net">daum.com</option>
+                            <option value="kakao.com">kakao.com</option>
+                        </select>
+                        <div id="emailError" class="error"></div>
+                    </div>
+    
+                    <div class="line">
+                        <hr>
+                    </div>
+                    <div class="signUp">
+                        <button type="submit" >가입하기</button>
+                    </div>
+                </form>
+            </div>
         </main>
     </div>
 </body>
