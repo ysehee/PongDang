@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #wrap{
     width: 100%;
     margin: 0 auto;
@@ -24,6 +31,7 @@
     box-sizing: border-box;
     font-size: 0;
     line-height: 70px;
+  
 }
 .h_left{
     float: left;
@@ -33,9 +41,10 @@
 }
 .header > ul > li{
     display: inline-block;
-    font-size: 14px;
+    font-size: 22px;
     padding-left: 30px;
     padding-right: 30px;
+    font-family: 'InkLipquid';
 
     color: #aba8a8;
     
